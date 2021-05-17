@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body style="background-color:gray;">
+  
+  <ul class="nav nav-pills nav-fill">
+    <nav class="navbar navbar-custom">
+        <!-- Navbar content -->     
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="./index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Movies</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Horror</a></li>
+          <li><a class="dropdown-item" href="#">Comedy</a></li>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Love Stories</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Tickets</a>
+      </li>
+      <li class="nav-item nav2">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item nav1 ">
+          <a class="nav-link active" href="#">Sign up</a>
+      </li>
+      
+    </nav>
+  </ul>
+    <div>
+    <div id="form">
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="validationserver01" class="form-label">First name</label>
+            <input type="text" class="form-control is-valid" id="firstname" value="" required>
+            
+          </div>
+          <div class="col-md-6">
+            <label for="validation2" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastname" value=""required>
+          </div>
+        <div class="col-md-4">
+          <label for="validation3" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" value=""required>
+        </div>
+        <div class="col-md-4">
+          <label for="validation4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" value="" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validation10" class="form-label"> Confirm Password</label>
+            <input type="password" class="form-control" id="confirmpassword" value="" required>
+          </div>
+          <div class="col-12">
+            <label for="validation11" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="Phone" required>
+          </div> 
+
+        <div class="col-12">
+          <label for="validation5" class="form-label">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+        </div>
+      
+        <div class="col-md-6">
+          <label for="validation6" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validation7" class="form-label">State</label>
+          <select id="state" class="form-select" required>
+            <option selected>Choose...</option>
+            <option>Washington</option>
+            <option>Texas</option>
+            <option >Minnesota</option>
+            <option>California</option>
+            
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="validation8" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="zip" required>
+        </div>
+        <div class="col-12">
+          <div class="validation9">
+            <input class="form-check-input" type="checkbox" id="validation9"required>
+            <label class="form-check-label" for="gridCheck">
+              Agree to terms and conditions.
+            </label>
+          </div>
+        </div> 
+        
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" onclick="return Validate(); onsubmit();">Submit</button>
+        </div>
+      </div>
+
+    <!--<input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" /-->
+    </form>
+  </div>
+
+    <ul id="users"></ul>
+
+    <script type="text/javascript">
+      function Validate() {
+          var password = document.getElementById("password").value;
+          var confirmPassword = document.getElementById("confirmpassword").value;
+          if (password != confirmPassword) {
+              alert("Passwords do not match.");
+              return false;
+          }
+          return true;
+      }
+      </script>
+      
+<script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>"
+
+
+</body>
+
+</html>
