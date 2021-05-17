@@ -1,0 +1,57 @@
+ody{
+    background-color: blue;
+}
+
+ .navbar-custom{
+    height:70px;
+}
+.nav{
+    width:100%;
+    background-color: black;
+    font-size:25px;
+    font-family: 'Times New Roman', Times, serif;
+}  
+ .nav1{
+margin-left: 20px;
+ } 
+ .nav2{
+     margin-left:850px;
+ }
+.card{
+    
+    margin-left: 13%;
+    margin-right:13%;
+    background-color: rgb(212, 42, 42);
+    color:white;
+    margin-top:25px;
+}
+/*image zoom out*/
+.inner{
+   overflow: hidden; 
+   transition:1.5s;
+   cursor:zoom-in;
+}
+
+.inner:hover{
+   background-size: 150%;
+}
+  .card-img-top{
+      height:300px;
+      width:250px;
+  }
+
+  #form{
+      margin-left:8%;
+      width:80%;
+      margin-top: 60px;
+      background-color: grey;
+  }
+  .btn{
+     margin-left:35%;
+      width:200px;
+      margin-top:30px;
+      margin-bottom:20px;
+
+  }
+ 
+ 
