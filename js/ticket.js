@@ -4,9 +4,14 @@ var c = 0;
 const temp = document.querySelector("#amount");
 const cc = document.querySelector("#count");
 
-const ff = document.querySelector("#final");
-const empty = document.querySelector(".awe");
-const modalBody = document.querySelector(".modal-body");
+const m = document.querySelector(".name");
+const n = document.querySelector(".email");
+const o = document.querySelector(".card");
+const p = document.querySelector(".ccv");
+const q = document.querySelector(".exp");
+const r = document.querySelector(".city");
+
+const t = document.querySelector(".zip");
 
 function addAmount(){
     amt = amt+7.99;
@@ -21,11 +26,4 @@ function resetAmount(){
     c = 0;
     cc.innerHTML = 0;
     temp.innerHTML = amt+"$";
-}
-
-
-function onSubmit(e){
-    e.preventDefault();
-   
-
 }
